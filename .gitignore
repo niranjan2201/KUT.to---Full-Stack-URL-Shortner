@@ -1,0 +1,20 @@
+# Personal Files
+Company Wise HR Contacts - HR Contacts.pdf
+Internship_Email_Tracking.xlsx
+Niranjan_Naik_Resume.pdf
+Template Email.docx
+
+# Sensitive & Configuration
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies & Builds
+**/node_modules/
+**/target/
+**/dist/
+
+# IDEs
+.idea/
+.vscode/
+*.iml

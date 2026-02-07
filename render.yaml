@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: kut-backend
+    env: docker
+    image: niranjan2005/url-shortener-sb # Use correct image name
+    plan: free
+    region: singapore # Change to your preferred region
+    numInstances: 1
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: PORT
+        value: 8098
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: EMAIL_HOST
+        sync: false
+      - key: EMAIL_TEMP_USERNAME
+        sync: false
+      - key: EMAIL_TEMP_PASSWORD
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+    autoDeploy: false
